@@ -1,3 +1,5 @@
+# Programa para converter temperatura
+
 print("============================================")
 print("=-=-=-=-= Conversor de temperatura =-=-=-=-=")
 print("============================================")
