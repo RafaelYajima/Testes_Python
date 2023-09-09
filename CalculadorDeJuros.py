@@ -1,3 +1,5 @@
+# Programa para calcular juros simples
+
 print("=================================================")
 print ("=-=-=-=-= Calculadora de juros simples =-=-=-=-=")
 print("=================================================")
