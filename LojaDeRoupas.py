@@ -11,7 +11,6 @@ if modo == 1:
     elif produto > 1000 :
         result = produto * 0.80
 
-        
     print("-----------------------------------------")
     print("O total a pagar é:",result,"reais")
 
@@ -23,9 +22,7 @@ if modo == 2:
     else:
         print("Nao podera fazer parcelas")
 
-
     print("-----------------------------------------")
-
 
     print("Caso seja parcelado em mais do que 10x possui juros")
     parc = float(input("Digite quantas parcelas ira fazer até 18x: "))
@@ -64,11 +61,7 @@ if modo == 2:
             juros = produto * 0.05
             parcela = (produto / 18) + juros
             result2 = parcela * 18
-        else:
-            print ("Nao é um numero de parcelas adequado")
-
-
-    print("-----------------------------------------")
-    
-
-    print("O total a pagar é:",result2,"reais")
+            print("-----------------------------------------")
+            print("O total a pagar é:",result2,"reais")
+    else:
+        print ("Nao é um numero de parcelas adequado")
