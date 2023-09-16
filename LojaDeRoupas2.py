@@ -15,9 +15,11 @@ elif forma_pagamento == '2' :
 
     if(valor_produtos < 800 and quantidade_parc > 5 or quantidade_parc < 2):
         print("Quantidade nao permitida!")
+        # sys.exit()
         possui_erro = True
     elif(quantidade_parc > 18) :
         print("QUantidade nao permitida.")
+        # sys.exit()
         possui_erro = True
     else :
         possui_erro = False
