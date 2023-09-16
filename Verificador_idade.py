@@ -1,8 +1,10 @@
-# Verificação de idade
+# Verificação de idade.
 
-idade = float(input("Digite sua idade"))
+## Crie um programa que peça ao usuario sua idade e identifique se ele é maior de idade ou não.
 
-if idade>17 :
+idade = float(input("Digite sua idade: "))
+
+if idade > 17:
     print("Você é maior de idade")
-else :
+else:
     print("Voce é menor de idade")
