@@ -3,20 +3,25 @@
 produto = float(input("Digite o valor do produto:"))
 modo = float(input("Digite o modo de pagamento 1(A vista), 2(A prazo):"))
 
+
 if modo == 1:
     print("Pagamento a vista com deconto")
-    if produto > 500:
+    if produto > 500 :
         result = produto * 0.90
+        print("O total a pagar é:",result,"reais")
     elif produto > 1000 :
         result = produto * 0.80
-    print("-----------------------------------------")
-    print("O total a pagar é:",result,"reais")
+        print("O total a pagar é:",result,"reais")
+    else:
+        print("Total a pagar:",produto,"reais")
+
 if modo == 2:
     print("Pagamento feito a prazo")
-    if produto >= 800 :
+    print("Voce pagara:",produto,"reais")
+    if produto > 800 :
         print("Pode ser parcelado acima de 5x")
-    else:
-        print("Nao podera fazer parcelas")
+else:
+    print("Nao podera fazer parcelas")
     print("-----------------------------------------")
     print("Caso seja parcelado em mais do que 10x possui juros")
     parc = float(input("Digite quantas parcelas ira fazer até 18x: "))
